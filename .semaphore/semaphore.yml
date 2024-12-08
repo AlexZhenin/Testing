@@ -11,6 +11,6 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - 'run: dotnet restore'
-            - 'run: dotnet build'
-            - 'run: dotnet test'
+            - dotnet restore
+            - dotnet build
+            - dotnet test
