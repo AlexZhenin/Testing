@@ -16,4 +16,10 @@ blocks:
             - dotnet restore
             - dotnet build
             - cd Tests
-            - 'dotnet test #'
+            - dotnet test
+after_pipeline:
+  task:
+    jobs:
+      - name: 'Job #1'
+        commands:
+          - artifact job test_result.log
