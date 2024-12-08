@@ -11,11 +11,11 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - restore:
-                solution: DedMoroz/DedMoroz.sln
-            - build:
-                solution: DedMoroz/DedMoroz.sln
-                configuration: Debug
-            - test:
-                project: DedMoroz/Tests/DedMoroz.Tests.csproj
-                configuration: Debug
+            - restore
+                solution DedMoroz/DedMoroz.sln
+            - build
+                solution DedMoroz/DedMoroz.sln
+                configuration Debug
+            - test
+                project DedMoroz/Tests/DedMoroz.Tests.csproj
+                configuration Debug
