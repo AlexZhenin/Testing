@@ -11,6 +11,7 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
+            - snap install dotnet-sdk
             - dotnet restore
             - dotnet build
             - dotnet test
