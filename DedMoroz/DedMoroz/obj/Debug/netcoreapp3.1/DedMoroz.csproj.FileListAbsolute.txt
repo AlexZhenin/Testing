@@ -1,0 +1,14 @@
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\bin\Debug\netcoreapp3.1\DedMoroz.exe
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\bin\Debug\netcoreapp3.1\DedMoroz.deps.json
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\bin\Debug\netcoreapp3.1\DedMoroz.runtimeconfig.json
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\bin\Debug\netcoreapp3.1\DedMoroz.runtimeconfig.dev.json
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\bin\Debug\netcoreapp3.1\DedMoroz.dll
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\bin\Debug\netcoreapp3.1\DedMoroz.pdb
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.csproj.AssemblyReference.cache
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.AssemblyInfoInputs.cache
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.AssemblyInfo.cs
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.csproj.CoreCompileInputs.cache
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.dll
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.pdb
+C:\Users\alexe\source\repos\DedMoroz\DedMoroz\obj\Debug\netcoreapp3.1\DedMoroz.genruntimeconfig.cache
