@@ -12,6 +12,6 @@ blocks:
           commands:
             - checkout
             - sudo snap install dotnet-sdk --classic
-            - dotnet restore
-            - dotnet build --configuration Release
-            - dotnet test --configuration Release
+            - cd DedMoroz && dotnet restore
+            - cd DedMoroz && dotnet build --configuration Release
+            - cd DedMoroz && dotnet test --configuration Release
