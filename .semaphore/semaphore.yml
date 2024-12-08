@@ -22,4 +22,4 @@ after_pipeline:
     jobs:
       - name: 'Job #1'
         commands:
-          - artifact push job test_result.log
+          - artifact push job ./test_result.log
