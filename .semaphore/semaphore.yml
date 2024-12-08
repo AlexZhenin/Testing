@@ -1,9 +1,6 @@
 version: v1.0
 name: Initial Pipeline
-agent:
-  machine:
-    type: f1-standard-2
-    os_image: ubuntu2204
+
 blocks:
   - name: Build and Test
     task:
@@ -11,6 +8,6 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - 'run: dotnet restore'
-            - 'run: dotnet build'
-            - 'run: dotnet test'
+            - run: dotnet restore
+            - run: dotnet build
+            - run: dotnet test
