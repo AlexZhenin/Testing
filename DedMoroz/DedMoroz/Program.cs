@@ -20,7 +20,6 @@ namespace DedMoroz
             int y = Convert.ToInt32(s[1]);
             int z = Convert.ToInt32(s[2]);
             int w = Convert.ToInt32(s[3]);
-            if (x == 10) x/=0;
             int sum = 0;
 
             for (int i = 0; i <= w / x; i++)
