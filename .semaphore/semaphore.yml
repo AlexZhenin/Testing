@@ -11,7 +11,7 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - snap info dotnet-sdk
+            - sudo snap install dotnet-sdk --classic
             - dotnet restore
             - dotnet build --configuration Release
             - dotnet test --configuration Release
