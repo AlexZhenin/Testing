@@ -17,9 +17,3 @@ blocks:
             - dotnet build
             - cd Tests
             - dotnet test
-after_pipeline:
-  task:
-    jobs:
-      - name: 'Job #1'
-        commands:
-          - artifact push workflow ./test_result.log
