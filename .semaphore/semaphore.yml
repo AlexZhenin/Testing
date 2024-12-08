@@ -11,7 +11,6 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - apt  install dotnet-host-8.0
-            - dotnet restore
-            - dotnet build
-            - dotnet test
+            - restore
+            - build
+            - test
