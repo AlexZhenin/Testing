@@ -1,6 +1,5 @@
 using System;
 using Xunit;
-using DedMoroz
 
 namespace DedMoroz.Tests
 {
