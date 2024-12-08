@@ -12,11 +12,8 @@ blocks:
           commands:
             - checkout
             - sudo snap install dotnet-sdk --classic
+            - cd DedMoroz
             - dotnet restore
-                solution DedMoroz
             - dotnet build
-                solution DedMoroz
-                configuration Debug
+            - cd Tests
             - dotnet test
-                project DedMoroz/Tests
-                configuration Debug
