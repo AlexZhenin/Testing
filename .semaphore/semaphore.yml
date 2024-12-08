@@ -4,7 +4,6 @@ agent:
   machine:
     type: f1-standard-2
     os_image: ubuntu2204
-
 blocks:
   - name: Build and Test
     task:
@@ -12,6 +11,6 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - run: dotnet restore
-            - run: dotnet build
-            - run: dotnet test
+            - dotnet restore
+            - dotnet build
+            - dotnet test
