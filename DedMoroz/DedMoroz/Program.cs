@@ -15,6 +15,7 @@ namespace DedMoroz
 
         public static int CalculateSum(string input)
         {
+            int a = 1/0;
             string[] s = input.Split(' ');
             int x = Convert.ToInt32(s[0]);
             int y = Convert.ToInt32(s[1]);
