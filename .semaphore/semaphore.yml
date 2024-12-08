@@ -1,18 +1,30 @@
 version: v1.0
-name: Initial Pipeline
+name: DedMoroz Tests
 agent:
   machine:
-    type: f1-standard-2
-    os_image: ubuntu2204
+    type: small
+    os_image: ubuntu20.04
 blocks:
   - name: Build and Test
     task:
-      jobs:
-        - name: Build and Test
-          commands:
-            - checkout
-            - sudo snap install dotnet-sdk --classic
-            - cd DedMoroz
-            - dotnet restore
-            - dotnet build --configuration Release
-            - dotnet test --configuration Release
+      prologue:
+        - sudo apt-get update -yq
+        - sudo apt-get install -yq apt-transport-https
+        - curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb | sudo apt-key add -
+        - sudo apt-get install -yq packages-microsoft-prod
+        - sudo apt-get update -yq
+        - sudo apt-get install -yq dotnet-sdk-3.1
+        - mkdir -p DedMoroz/DedMoroz/bin/Debug/netcoreapp3.1
+        - mkdir -p DedMoroz/Tests/bin/Debug/netcoreapp3.1
+      steps:
+        - checkout
+        - restore:
+            solution: DedMoroz/DedMoroz.sln
+        - build:
+            solution: DedMoroz/DedMoroz.sln
+            configuration: Debug
+        - test:
+            project: DedMoroz/Tests/DedMoroz.Tests.csproj
+            configuration: Debug
+            #Optional: specify test runner if needed (e.g., MSTest, xUnit)
+            #test_runner: MSTest
