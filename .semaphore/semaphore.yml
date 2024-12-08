@@ -16,4 +16,4 @@ blocks:
             - dotnet restore
             - dotnet build
             - cd Tests
-            - dotnet test
+            - 'dotnet test #'
