@@ -11,10 +11,7 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - sudo snap install dotnet-sdk --classic
-            - cd DedMoroz && dotnet restore
-            - cd DedMoroz && dotnet build --configuration Release
-            - cd DedMoroz && dotnet test --configuration Release
+            - sudo apt-get install -yq dotnet-sdk-3.1
             - cd DedMoroz
             - dotnet restore
             - dotnet build --configuration Release
