@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using DedMoroz.sln
 
 namespace DedMoroz.Tests
 {
