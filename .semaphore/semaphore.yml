@@ -11,11 +11,12 @@ blocks:
         - name: Build and Test
           commands:
             - checkout
-            - restore
+            - sudo snap install dotnet-sdk --classic
+            - dotnet restore
                 solution DedMoroz/DedMoroz.sln
-            - build
+            - dotnet build
                 solution DedMoroz/DedMoroz.sln
                 configuration Debug
-            - test
+            - dotnet test
                 project DedMoroz/Tests/DedMoroz.Tests.csproj
                 configuration Debug
