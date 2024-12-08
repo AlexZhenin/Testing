@@ -13,10 +13,10 @@ blocks:
             - checkout
             - sudo snap install dotnet-sdk --classic
             - dotnet restore
-                solution DedMoroz/DedMoroz.sln
+                solution DedMoroz
             - dotnet build
-                solution DedMoroz/DedMoroz.sln
+                solution DedMoroz
                 configuration Debug
             - dotnet test
-                project DedMoroz/Tests/DedMoroz.Tests.csproj
+                project DedMoroz/Tests
                 configuration Debug
