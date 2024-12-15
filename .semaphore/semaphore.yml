@@ -9,7 +9,7 @@ blocks:
     task:
       jobs:
         - name: Build and Test
-          artifacts:  # <-- Секция artifacts здесь, на уровне blocks
+          artifacts:
             - path: DedMoroz/Tests/TestResults.xml
           commands:
             - checkout
@@ -17,7 +17,7 @@ blocks:
             - dotnet restore
             - dotnet build
             - cd Tests
-            - dotnet test --logger "junit;LogFilePath=TestResults.xml"
+            - dotnet test --logger "junit;LogFilePath=./TestResults.xml"
       prologue:
         commands:
           - sudo snap install dotnet-sdk --classic
