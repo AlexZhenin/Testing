@@ -7,10 +7,10 @@ agent:
 blocks:
   - name: Build and Test
     task:
-      artifacts: # <-- Секция artifacts здесь, на уровне task
-        - path: DedMoroz/Tests/TestResults.xml
       jobs:
         - name: Build and Test
+          artifacts:  # <-- Секция artifacts здесь, на уровне blocks
+            - path: DedMoroz/Tests/TestResults.xml
           commands:
             - checkout
             - cd DedMoroz
