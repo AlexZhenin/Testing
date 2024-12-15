@@ -16,8 +16,6 @@ blocks:
             - dotnet build
             - cd Tests
             - dotnet test --logger "junit;LogFilePath=TestResults.xml"
-          artifacts:
-            - path: DedMoroz/Tests/TestResults.xml
       prologue:
         commands:
           - sudo snap install dotnet-sdk --classic
