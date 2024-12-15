@@ -19,3 +19,7 @@ blocks:
       prologue:
         commands:
           - sudo snap install dotnet-sdk --classic
+      epilogue:
+        always:
+          commands:
+            - '[[ -f TestResults.xml ]] && test-results publish TestResults.xml'
