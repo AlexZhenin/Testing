@@ -9,8 +9,6 @@ blocks:
     task:
       jobs:
         - name: Build and Test
-          artifacts:
-            - path: DedMoroz/Tests/TestResults.xml
           commands:
             - checkout
             - cd DedMoroz
